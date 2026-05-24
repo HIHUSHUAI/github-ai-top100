@@ -1,0 +1,1237 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>GitHub 本周热门 AI 项目 Top 100</title>
+<style>
+  :root {
+    --bg: #fff;
+    --fg: #111;
+    --border: #e8e8e8;
+    --muted: #777;
+    --hover-bg: #f7f7f7;
+    --tag-bg: #f2f2f2;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .container { padding: 0 16px; max-width: 720px; margin: 0 auto; }
+  header {
+    padding: 28px 16px 20px;
+    border-bottom: 2.5px solid var(--fg);
+    position: sticky;
+    top: 0;
+    background: var(--bg);
+    z-index: 10;
+    backdrop-filter: blur(12px);
+  }
+  header h1 { font-size: 22px; font-weight: 800; letter-spacing: -0.5px; margin-bottom: 6px; }
+  header .meta { font-size: 12px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 6px 14px; }
+  .stats-bar { display: flex; gap: 6px; margin: 14px 0 0; flex-wrap: wrap; }
+  .stat-chip {
+    background: var(--fg);
+    color: var(--bg);
+    font-size: 11px;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+  }
+  .project-card {
+    display: flex;
+    align-items: flex-start;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--border);
+    transition: background .12s;
+    gap: 14px;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+  }
+  .project-card:hover { background: var(--hover-bg); margin: 0 -16px; padding-left: 16px; padding-right: 16px; }
+  .project-card:active { background: var(--border); }
+  .rank {
+    font-size: 13px;
+    font-weight: 800;
+    color: var(--muted);
+    min-width: 24px;
+    text-align: center;
+    flex-shrink: 0;
+    line-height: 1.5;
+    opacity: 0.6;
+  }
+  .rank.top3 { color: var(--fg); font-size: 15px; opacity: 1; }
+  .info { flex: 1; min-width: 0; }
+  .info .name { font-size: 15px; font-weight: 700; margin-bottom: 4px; word-break: break-word; letter-spacing: -0.2px; }
+  .info .desc {
+    font-size: 13px;
+    color: var(--muted);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 7px;
+    line-height: 1.45;
+  }
+  .meta-row { display: flex; align-items: center; gap: 10px; font-size: 12px; color: var(--muted); }
+  .stars { font-weight: 700; color: var(--fg); font-size: 12px; }
+  .trend { font-weight: 800; font-size: 11px; letter-spacing: 0.3px; }
+  .trend.hot { color: var(--fg); }
+  .trend.warm { color: var(--muted); }
+  footer {
+    text-align: center;
+    padding: 36px 16px;
+    color: var(--muted);
+    font-size: 12px;
+    border-top: 1px solid var(--border);
+    margin-top: 8px;
+  }
+  .timestamp { font-weight: 700; color: var(--fg); }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0d0d0d;
+      --fg: #e8e8e8;
+      --border: #262626;
+      --muted: #8a8a8a;
+      --hover-bg: #181818;
+      --tag-bg: #1f1f1f;
+    }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <h1>GitHub 本周热门 AI 项目</h1>
+    <div class="meta">
+      <span>统计周期：2026-05-18 ~ 2026-05-25</span>
+      <span>更新：2026-05-25 07:05:39</span>
+    </div>
+    <div class="stats-bar">
+      <span class="stat-chip">Top 100</span>
+      <span class="stat-chip">AI Agent</span>
+      <span class="stat-chip">Coding</span>
+      <span class="stat-chip">LLM</span>
+      <span class="stat-chip">多模态</span>
+      <span class="stat-chip">RAG</span>
+    </div>
+  </div>
+</header>
+<div class="container">
+<a href="https://github.com/obra/superpowers" class="project-card" target="_blank" rel="noopener">
+  <span class="rank top3">01</span>
+  <div class="info">
+    <div class="name">Superpowers</div>
+    <div class="desc">面向 Claude Code / Cursor 等 AI 编程工具的工程级工作流脚手架，Skill 文件让 AI 遵循 TDD、Code Review 等规范</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 199k</span>
+      <span class="trend hot">&#8593;&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/tinyhumansai/openhuman" class="project-card" target="_blank" rel="noopener">
+  <span class="rank top3">02</span>
+  <div class="info">
+    <div class="name">OpenHuman</div>
+    <div class="desc">桌面 AI 管家，有形象、声音、记忆，可连接 100+ 服务，本地 SQLite 构建知识图谱</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 23.5k</span>
+      <span class="trend hot">&#8593;&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/multica-ai/andrej-karpathy-skills" class="project-card" target="_blank" rel="noopener">
+  <span class="rank top3">03</span>
+  <div class="info">
+    <div class="name">Andrej Karpathy Skills</div>
+    <div class="desc">Karpathy 总结的 CLAUDE.md 提示词/技能集合，规范 AI 编码助手行为以减少跳过测试、乱改代码</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 140.7k</span>
+      <span class="trend hot">&#8593;&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/colbymchenry/codegraph" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">04</span>
+  <div class="info">
+    <div class="name">CodeGraph</div>
+    <div class="desc">本地代码知识图谱工具，扫描项目建立索引让 AI 直接查图谱，大幅减少 Token 消耗，100% 本地运行</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 9.3k</span>
+      <span class="trend warm">&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/Imbad0202/academic-research-skills" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">05</span>
+  <div class="info">
+    <div class="name">Academic Research Skills</div>
+    <div class="desc">学术论文写作全流程 AI 提示词集合，覆盖研究→写作→审阅→修改→定稿各阶段</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 16k</span>
+      <span class="trend warm">&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/HKUDS/CLI-Anything" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">06</span>
+  <div class="info">
+    <div class="name">CLI-Anything</div>
+    <div class="desc">让各类软件代理原生化的 CLI 框架，统一入口暴露不同软件能力为命令行工具</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 35.5k</span>
+      <span class="trend ">&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/n8n-io/n8n" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">07</span>
+  <div class="info">
+    <div class="name">n8n</div>
+    <div class="desc">工作流自动化平台，支持 MCP 协议，连接 400+ 集成服务，AI 驱动自动化</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 183k</span>
+      <span class="trend hot">&#8593;&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/anthropics/claude-code" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">08</span>
+  <div class="info">
+    <div class="name">Claude Code</div>
+    <div class="desc">Anthropic 官方 Agentic Coding 工具，读仓库→规划→修改→验证→迭代全流程</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 152k</span>
+      <span class="trend hot">&#8593;&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/NousResearch/hermes-agent" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">09</span>
+  <div class="info">
+    <div class="name">Hermes Agent</div>
+    <div class="desc">与你共同成长的 AI Agent，具备持续学习和自适应能力</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 146.8k</span>
+      <span class="trend hot">&#8593;&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/langflow-ai/langflow" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">10</span>
+  <div class="info">
+    <div class="name">Langflow</div>
+    <div class="desc">构建和部署 AI Agent 与工作流的可视化低代码平台</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 147.8k</span>
+      <span class="trend warm">&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/langgenius/dify" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">11</span>
+  <div class="info">
+    <div class="name">Dify</div>
+    <div class="desc">生产级 Agent 工作流开发平台，支持可视化编排 LLM 应用，140k+ Star</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 140.5k</span>
+      <span class="trend warm">&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/open-webui/open-webui" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">12</span>
+  <div class="info">
+    <div class="name">Open WebUI</div>
+    <div class="desc">用户友好的 AI 交互界面，支持 Ollama、OpenAI API 等多种后端</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 135.9k</span>
+      <span class="trend warm">&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/langchain-ai/langchain" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">13</span>
+  <div class="info">
+    <div class="name">LangChain</div>
+    <div class="desc">Agent 工程平台，TypeScript 和 Python 双语言支持，LLM 应用开发首选框架</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 136k</span>
+      <span class="trend ">&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/anthropics/skills" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">14</span>
+  <div class="info">
+    <div class="name">Anthropic Skills</div>
+    <div class="desc">Anthropic 官方 Agent Skills 公共仓库，AI Agent 可复用技能集合</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 129.7k</span>
+      <span class="trend warm">&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/firecrawl/firecrawl" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">15</span>
+  <div class="info">
+    <div class="name">Firecrawl</div>
+    <div class="desc">面向 AI 的网页搜索、抓取和交互 API，将任意网页转为 Markdown 供 LLM 使用</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 119k</span>
+      <span class="trend hot">&#8593;&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/mattpocock/skills" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">16</span>
+  <div class="info">
+    <div class="name">Matt Pocock Skills</div>
+    <div class="desc">面向真实工程师的 AI Skills 集合，直接来自 .claude 目录，74k+ Star</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 74.5k</span>
+      <span class="trend hot">&#8593;&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/compozy/compozy" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">17</span>
+  <div class="info">
+    <div class="name">Compozy</div>
+    <div class="desc">驱动 AI 辅助开发全生命周期——从创意到交付代码的一站式平台</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 618</span>
+      <span class="trend hot">&#8593;&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/xai-org/x-algorithm" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">18</span>
+  <div class="info">
+    <div class="name">X Algorithm</div>
+    <div class="desc">驱动 X 平台 For You 推荐流的算法实现，xAI 开源力作</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 16.5k</span>
+      <span class="trend hot">&#8593;&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/withcoral/coral" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">19</span>
+  <div class="info">
+    <div class="name">Coral</div>
+    <div class="desc">通过单一 SQL 接口访问 API、文件和实时数据源——专为 Agent 构建</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 1.9k</span>
+      <span class="trend warm">&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/NVlabs/Sana" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">20</span>
+  <div class="info">
+    <div class="name">Sana</div>
+    <div class="desc">NVIDIA 高效高分辨率图像合成，基于线性扩散 Transformer</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 5.1k</span>
+      <span class="trend warm">&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/TauricResearch/TradingAgents" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">21</span>
+  <div class="info">
+    <div class="name">TradingAgents</div>
+    <div class="desc">多 Agent LLM 金融交易框架，AI 驱动的量化交易决策系统</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 75.1k</span>
+      <span class="trend hot">&#8593;&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/ruvnet/ruflo" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">22</span>
+  <div class="info">
+    <div class="name">Ruvnet/Ruflo</div>
+    <div class="desc">领先的 Agent 编排平台，部署智能多 Agent 集群，协调自主工作流</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 49.5k</span>
+      <span class="trend hot">&#8593;&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/Hmbown/DeepSeek-TUI" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">23</span>
+  <div class="info">
+    <div class="name">DeepSeek-TUI</div>
+    <div class="desc">DeepSeek 模型原生 AI 编程 Agent，终端运行，围绕前缀缓存稳定性优化</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 26.2k</span>
+      <span class="trend hot">&#8593;&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/nexu-io/open-design" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">24</span>
+  <div class="info">
+    <div class="name">Open Design</div>
+    <div class="desc">本地优先的开源替代 Claude Design，含 19 个 Skill 和 71 个品牌级设计系统</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 37.8k</span>
+      <span class="trend hot">&#8593;&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/modelcontextprotocol/modelcontextprotocol" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">25</span>
+  <div class="info">
+    <div class="name">MCP</div>
+    <div class="desc">AI 模型与外部工具/服务之间的标准通信协议规范，Agent 生态基石</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 80k+</span>
+      <span class="trend warm">&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/simstudioai/sim" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">26</span>
+  <div class="info">
+    <div class="name">SimStudio</div>
+    <div class="desc">可视化 AI Agent 工作流构建器，所见即所得的 Agent 编排工具</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 35k+</span>
+      <span class="trend hot">&#8593;&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/dnhkng/GlaDOS" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">27</span>
+  <div class="info">
+    <div class="name">GlaDOS</div>
+    <div class="desc">个性化人格 AI 助手/语音交互系统，实时对话和任务执行</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 25k+</span>
+      <span class="trend warm">&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/freddyaboulton/fastrtc" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">28</span>
+  <div class="info">
+    <div class="name">FastRTC</div>
+    <div class="desc">实时多模态交互基础设施，支持语音/视频 AI 实时通信</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 15k+</span>
+      <span class="trend hot">&#8593;&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/anthropics/anthropic-cookbook" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">29</span>
+  <div class="info">
+    <div class="name">Anthropic Cookbook</div>
+    <div class="desc">API/提示词/接入示例大全，Anthropic 官方使用指南和最佳实践</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 30k+</span>
+      <span class="trend warm">&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/anthropics/claude-plugins-official" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">30</span>
+  <div class="info">
+    <div class="name">Claude Plugins Official</div>
+    <div class="desc">Anthropic 官方管理的高质量 Claude Code 插件目录</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 5k+</span>
+      <span class="trend warm">&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/agentskills/security-skills" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">31</span>
+  <div class="info">
+    <div class="name">Security Agent Skills</div>
+    <div class="desc">754 个结构化网络安全技能，映射 MITRE ATT&CK、NIST CSF 2.0 等 5 个框架</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 12k+</span>
+      <span class="trend warm">&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/ccswitch/ccswitch" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">32</span>
+  <div class="info">
+    <div class="name">CCSwitch</div>
+    <div class="desc">跨平台桌面 AI 编程助手一体化管理工具，支持 Claude Code、Codex、Cursor 等</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 8k+</span>
+      <span class="trend hot">&#8593;&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/wiltodelta/remove-ai-watermarks" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">33</span>
+  <div class="info">
+    <div class="name">Remove AI Watermarks</div>
+    <div class="desc">CLI 和库，移除可见（Gemini）和不可见（SynthID、C2PA、EXIF）AI 水印</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 557</span>
+      <span class="trend hot">&#8593;&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/antoinezambelli/forge" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">34</span>
+  <div class="info">
+    <div class="name">Forge</div>
+    <div class="desc">Python 框架，自托管 LLM 工具调用和多步 Agent 工作流</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 606</span>
+      <span class="trend hot">&#8593;&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/msitarzewski/agency-agents" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">35</span>
+  <div class="info">
+    <div class="name">Agency Agents</div>
+    <div class="desc">完整 AI 代理团队——从前端向导到 Reddit 专家，每个 Agent 都是专业角色</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 912</span>
+      <span class="trend hot">&#8593;&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/rtk-ai/rtk" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">36</span>
+  <div class="info">
+    <div class="name">RTK</div>
+    <div class="desc">CLI 代理，在常见开发命令上减少 LLM Token 消耗 60-90%，单 Rust 二进制</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 806</span>
+      <span class="trend hot">&#8593;&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/tashfeenahmed/freellmapi" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">37</span>
+  <div class="info">
+    <div class="name">FreeLLMAPI</div>
+    <div class="desc">OpenAI 兼容代理，聚合约 14 个 AI 提供商的免费额度密钥，自动故障转移</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 398</span>
+      <span class="trend hot">&#8593;&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/karpathy/autoresearch" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">38</span>
+  <div class="info">
+    <div class="name">AutoResearch (Karpathy)</div>
+    <div class="desc">AI Agent 在单 GPU 上自动运行 nanochat 训练进行科学研究</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 82.6k</span>
+      <span class="trend warm">&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/infiniflow/ragflow" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">39</span>
+  <div class="info">
+    <div class="name">RAGFlow</div>
+    <div class="desc">领先的开源检索增强生成引擎，深度文档理解与知识库构建</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 81k</span>
+      <span class="trend hot">&#8593;&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/bytedance/deer-flow" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">40</span>
+  <div class="info">
+    <div class="name">DeerFlow (ByteDance)</div>
+    <div class="desc">字节跳动开源长周期 SuperAgent harness，自动研究、编码和创建</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 69k</span>
+      <span class="trend hot">&#8593;&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/666ghj/BettaFish" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">41</span>
+  <div class="info">
+    <div class="name">BettaFish</div>
+    <div class="desc">多 Agent 舆情分析助手，打破信息茧房，还原舆情原貌，预测未来走向</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 41k</span>
+      <span class="trend warm">&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/khoj-ai/khoj" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">42</span>
+  <div class="info">
+    <div class="name">Khoj</div>
+    <div class="desc">你的 AI 第二大脑，自托管，从网络或文档中获取答案</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 34.6k</span>
+      <span class="trend warm">&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/stanford-oval/storm" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">43</span>
+  <div class="info">
+    <div class="name">STORM (Stanford)</div>
+    <div class="desc">斯坦福 LLM 驱动知识整理系统，自动研究主题并生成综述文章</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 28.2k</span>
+      <span class="trend ">&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/assafelovic/gpt-researcher" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">44</span>
+  <div class="info">
+    <div class="name">GPT Researcher</div>
+    <div class="desc">自主 Agent，使用任何 LLM 对任何数据进行深度研究</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 27.2k</span>
+      <span class="trend warm">&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/dzhng/deep-research" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">45</span>
+  <div class="info">
+    <div class="name">Deep Research</div>
+    <div class="desc">AI 驱动的研究助手，迭代式深度搜索与综合，可产出高质量研究报告</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 18.9k</span>
+      <span class="trend warm">&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/K-Dense-AI/scientific-agent-skills" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">46</span>
+  <div class="info">
+    <div class="name">Scientific Agent Skills</div>
+    <div class="desc">科研、工程、分析领域的即用型 Agent Skills 集合，25k+ Star</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 25.1k</span>
+      <span class="trend hot">&#8593;&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/mvanhorn/last30days-skill" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">47</span>
+  <div class="info">
+    <div class="name">last30days-skill</div>
+    <div class="desc">AI Agent Skill，跨 Reddit、X、YouTube、HN、Polymarket 研究任何话题</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 26.3k</span>
+      <span class="trend hot">&#8593;&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/ayush-that/KnowledgeGraph" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">48</span>
+  <div class="info">
+    <div class="name">Knowledge Graph Explorer</div>
+    <div class="desc">将代码或知识库转化为交互式知识图谱，可探索、搜索和提问</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 15k+</span>
+      <span class="trend hot">&#8593;&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/google/eng-practices" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">49</span>
+  <div class="info">
+    <div class="name">Google Engineering Practices</div>
+    <div class="desc">Google 工程实践文档，AI 编码 Agent 的最佳实践参考</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 20k+</span>
+      <span class="trend ">&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/different-ai/agent-terminal" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">50</span>
+  <div class="info">
+    <div class="name">Agent Terminal</div>
+    <div class="desc">基于 Ghostty 的 macOS 终端，带垂直标签和 AI 编程 Agent 通知</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 3k+</span>
+      <span class="trend warm">&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/richards199999/gpt-image2" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">51</span>
+  <div class="info">
+    <div class="name">Prompt as Code</div>
+    <div class="desc">工业级提示词引擎与模板库，370+ 案例逆向工程，20+ 套工业级模板</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 18k+</span>
+      <span class="trend warm">&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/pi-ruview/pi-ruview" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">52</span>
+  <div class="info">
+    <div class="name">Pi RuView</div>
+    <div class="desc">将普通 WiFi 信号转化为实时空间智能、生命体征监测和存在检测</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 4k+</span>
+      <span class="trend hot">&#8593;&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/nickciolino/stealth-browser" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">53</span>
+  <div class="info">
+    <div class="name">Stealth Browser</div>
+    <div class="desc">通过所有机器人检测测试的隐形 Chromium，30/30 测试通过，Playwright 替代</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 7k+</span>
+      <span class="trend hot">&#8593;&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/ollama/ollama" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">54</span>
+  <div class="info">
+    <div class="name">Ollama</div>
+    <div class="desc">本地运行大语言模型的简易工具，一键部署 Llama、Mistral 等开源模型</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 150k+</span>
+      <span class="trend warm">&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/vllm-project/vllm" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">55</span>
+  <div class="info">
+    <div class="name">vLLM</div>
+    <div class="desc">高吞吐量 LLM 推理引擎，PagedAttention 技术支持高效服务</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 60k+</span>
+      <span class="trend hot">&#8593;&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">56</span>
+  <div class="info">
+    <div class="name">Stable Diffusion WebUI</div>
+    <div class="desc">Stable Diffusion 图像生成 Web 界面，功能丰富的 AI 绘画工具</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 170k+</span>
+      <span class="trend ">&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/comfyanonymous/ComfyUI" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">57</span>
+  <div class="info">
+    <div class="name">ComfyUI</div>
+    <div class="desc">基于节点的 AI 图像/视频生成工作流工具，强大的模块化扩散模型界面</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 90k+</span>
+      <span class="trend hot">&#8593;&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/openai/whisper" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">58</span>
+  <div class="info">
+    <div class="name">Whisper</div>
+    <div class="desc">OpenAI 开源语音识别模型，多语言通用语音转文字系统</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 95k+</span>
+      <span class="trend ">&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/crewAIInc/crewAI" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">59</span>
+  <div class="info">
+    <div class="name">CrewAI</div>
+    <div class="desc">多 Agent 协作框架，编排角色化 AI Agent 协同完成复杂任务</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 35k+</span>
+      <span class="trend hot">&#8593;&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/Significant-Gravitas/AutoGPT" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">60</span>
+  <div class="info">
+    <div class="name">AutoGPT</div>
+    <div class="desc">自主 AI Agent 平台，让 GPT 自主完成目标设定和执行</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 180k+</span>
+      <span class="trend ">&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/geekan/MetaGPT" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">61</span>
+  <div class="info">
+    <div class="name">MetaGPT</div>
+    <div class="desc">多 Agent 元编程框架，模拟软件公司角色分工的 AI 软件开发</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 55k+</span>
+      <span class="trend warm">&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/mem0ai/mem0" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">62</span>
+  <div class="info">
+    <div class="name">Mem0</div>
+    <div class="desc">AI 应用记忆层，为 LLM 提供个性化长期记忆能力，跨会话记忆</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 30k+</span>
+      <span class="trend hot">&#8593;&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/chroma-core/chroma" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">63</span>
+  <div class="info">
+    <div class="name">Chroma</div>
+    <div class="desc">AI 原生开源向量数据库，嵌入式数据库用于 LLM 应用</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 25k+</span>
+      <span class="trend warm">&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/milvus-io/milvus" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">64</span>
+  <div class="info">
+    <div class="name">Milvus</div>
+    <div class="desc">云原生向量数据库，为十亿级向量相似搜索而生</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 35k+</span>
+      <span class="trend warm">&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/FlowiseAI/Flowise" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">65</span>
+  <div class="info">
+    <div class="name">Flowise</div>
+    <div class="desc">拖拽式 LLM 应用构建器，低代码可视化构建 LangChain 流程</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 45k+</span>
+      <span class="trend hot">&#8593;&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/Mintplex-Labs/anything-llm" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">66</span>
+  <div class="info">
+    <div class="name">Anything LLM</div>
+    <div class="desc">全功能 AI 应用，将任何文档转化为可聊天的知识库</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 45k+</span>
+      <span class="trend hot">&#8593;&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/nomic-ai/gpt4all" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">67</span>
+  <div class="info">
+    <div class="name">GPT4All</div>
+    <div class="desc">本地运行大型语言模型的桌面应用，隐私优先的 AI 聊天</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 80k+</span>
+      <span class="trend ">&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/imartinez/privateGPT" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">68</span>
+  <div class="info">
+    <div class="name">PrivateGPT</div>
+    <div class="desc">离线文档问答工具，使用 LLM 在无网络环境下与文档交互</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 60k+</span>
+      <span class="trend ">&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/pipecat-ai/pipecat" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">69</span>
+  <div class="info">
+    <div class="name">Pipecat</div>
+    <div class="desc">开源语音和多模态对话 AI 框架，处理实时音频流、轮次切换和延迟管理</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 11.7k</span>
+      <span class="trend hot">&#8593;&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/livekit/agents" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">70</span>
+  <div class="info">
+    <div class="name">LiveKit Agents</div>
+    <div class="desc">基于 WebRTC 的实时语音 Agent 框架，底层实时音视频管道，Agent 逻辑自由填充</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 15k+</span>
+      <span class="trend hot">&#8593;&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/browser-use/browser-use" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">71</span>
+  <div class="info">
+    <div class="name">Browser Use</div>
+    <div class="desc">让 AI Agent 像人一样在浏览器中点击、输入、导航，自动化网页操作</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 93.6k</span>
+      <span class="trend hot">&#8593;&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/mastra-ai/mastra" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">72</span>
+  <div class="info">
+    <div class="name">Mastra</div>
+    <div class="desc">AI Agent 框架，支持多步骤任务拆解和多 Agent 协作编排</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 12k+</span>
+      <span class="trend warm">&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/ag2ai/ag2" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">73</span>
+  <div class="info">
+    <div class="name">AG2 (AutoGen)</div>
+    <div class="desc">多 Agent 对话框架，支持 Agent 间自主通信与协作，Microsoft 团队维护</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 20k+</span>
+      <span class="trend warm">&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/ComposioHQ/composio" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">74</span>
+  <div class="info">
+    <div class="name">Composio</div>
+    <div class="desc">统一接入 Gmail、Slack、GitHub 等外部工具的 Agent 集成平台</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 25k+</span>
+      <span class="trend hot">&#8593;&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/travisvn/awesome-claude-skills" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">75</span>
+  <div class="info">
+    <div class="name">Awesome Claude Skills</div>
+    <div class="desc">1000+ 可复用 prompt 与 workflow 技能包，Claude Code 生态最大技能库</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 20k+</span>
+      <span class="trend hot">&#8593;&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/openai/codex" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">76</span>
+  <div class="info">
+    <div class="name">Codex CLI</div>
+    <div class="desc">OpenAI 官方终端 AI 编程 Agent，轻量级命令行编码助手</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 80k+</span>
+      <span class="trend warm">&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/google-gemini/gemini-cli" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">77</span>
+  <div class="info">
+    <div class="name">Gemini CLI</div>
+    <div class="desc">Google Gemini 终端 AI 工具，支持代码生成、调试和查询，MCP 支持</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 104k</span>
+      <span class="trend hot">&#8593;&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/QwenLM/Qwen-Agent" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">78</span>
+  <div class="info">
+    <div class="name">Qwen Agent</div>
+    <div class="desc">阿里通义千问 Agent 框架，支持工具调用、RAG 和代码解释器</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 25k+</span>
+      <span class="trend warm">&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/run-llama/llama_index" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">79</span>
+  <div class="info">
+    <div class="name">LlamaIndex</div>
+    <div class="desc">LLM 数据连接框架，将外部数据接入大语言模型应用</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 45k+</span>
+      <span class="trend warm">&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/MiniMax-AI/MiniMax-01" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">80</span>
+  <div class="info">
+    <div class="name">MiniMax-01</div>
+    <div class="desc">MiniMax 开源大语言模型，支持超长上下文的新一代模型架构</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 18k+</span>
+      <span class="trend hot">&#8593;&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/meta-llama/codellama" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">81</span>
+  <div class="info">
+    <div class="name">CodeLlama</div>
+    <div class="desc">Meta 开源代码专用大语言模型，基于 Llama 架构的代码生成</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 40k+</span>
+      <span class="trend ">&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/mudler/LocalAI" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">82</span>
+  <div class="info">
+    <div class="name">LocalAI</div>
+    <div class="desc">自托管 AI 推理 API，OpenAI 兼容的本地 AI 服务，无需 GPU</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 35k+</span>
+      <span class="trend warm">&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/deepset-ai/haystack" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">83</span>
+  <div class="info">
+    <div class="name">Haystack</div>
+    <div class="desc">NLP 框架，用 Transformer 和 LLM 构建端到端搜索与问答系统</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 22k+</span>
+      <span class="trend ">&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/invoke-ai/InvokeAI" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">84</span>
+  <div class="info">
+    <div class="name">InvokeAI</div>
+    <div class="desc">专业级 AI 图像生成工作室，面向创意专业人士的 Stable Diffusion 工具</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 28k+</span>
+      <span class="trend warm">&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/suno-ai/bark" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">85</span>
+  <div class="info">
+    <div class="name">Bark</div>
+    <div class="desc">Suno AI 文本转音频模型，支持多语言语音生成、音乐和音效</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 38k+</span>
+      <span class="trend ">&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/coqui-ai/TTS" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">86</span>
+  <div class="info">
+    <div class="name">TTS (Coqui)</div>
+    <div class="desc">深度学习文本转语音工具包，支持多种语音合成模型</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 40k+</span>
+      <span class="trend ">&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/BlinkDL/RWKV-LM" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">87</span>
+  <div class="info">
+    <div class="name">RWKV</div>
+    <div class="desc">线性注意力 RNN 大语言模型，结合 Transformer 和 RNN 优势</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 20k+</span>
+      <span class="trend ">&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/lllyasviel/Fooocus" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">88</span>
+  <div class="info">
+    <div class="name">Fooocus</div>
+    <div class="desc">Stable Diffusion 图像生成工具，简化 AI 绘画流程，一键出图</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 45k+</span>
+      <span class="trend ">&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/jina-ai/jina" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">89</span>
+  <div class="info">
+    <div class="name">Jina AI</div>
+    <div class="desc">多模态 AI 服务框架，构建跨模态搜索和生成应用</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 25k+</span>
+      <span class="trend ">&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/lmstudio-ai/lmstudio" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">90</span>
+  <div class="info">
+    <div class="name">LM Studio</div>
+    <div class="desc">桌面端本地 LLM 运行工具，支持发现、下载和运行开源模型</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 20k+</span>
+      <span class="trend ">&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/slidevjs/slidev" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">91</span>
+  <div class="info">
+    <div class="name">Slidev</div>
+    <div class="desc">开源 AI 演示文稿生成器，面向开发者的 Markdown 驱动幻灯片工具</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 40k+</span>
+      <span class="trend warm">&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/github/copilot-cli" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">92</span>
+  <div class="info">
+    <div class="name">Copilot CLI</div>
+    <div class="desc">GitHub Copilot 命令行工具，终端内 AI 辅助编程</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 50k+</span>
+      <span class="trend warm">&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/openclaw/openclaw" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">93</span>
+  <div class="info">
+    <div class="name">OpenClaw</div>
+    <div class="desc">开源 AI Agent 框架，支持多模型自动调度和工具调用，统一 Agent 接口</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 12k+</span>
+      <span class="trend warm">&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/orailnoor/DroidDesk" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">94</span>
+  <div class="info">
+    <div class="name">DroidDesk</div>
+    <div class="desc">将 Android 手机变成真正的 Linux 桌面环境，运行 VS Code、Firefox 等桌面应用</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 159</span>
+      <span class="trend hot">&#8593;&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/anthropics/managed-agents" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">95</span>
+  <div class="info">
+    <div class="name">Managed Agents</div>
+    <div class="desc">开源托管 Agent 平台，将编程 Agent 变为真正队友——分配任务、追踪进度、积累技能</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 10k+</span>
+      <span class="trend hot">&#8593;&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/anthropics/prompt-eng-interactive-tutorial" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">96</span>
+  <div class="info">
+    <div class="name">Anthropic Prompt Engineering</div>
+    <div class="desc">Anthropic 官方 Prompt Engineering 交互式教程，系统学习提示词工程</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 15k+</span>
+      <span class="trend warm">&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/astronomical-data-processing/mcp-server-astronomy" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">97</span>
+  <div class="info">
+    <div class="name">MCP Astronomy Server</div>
+    <div class="desc">垂直领域 MCP Server，将天文数据处理能力暴露给 AI Agent</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 2k+</span>
+      <span class="trend warm">&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/ag2ai/ag2-studio" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">98</span>
+  <div class="info">
+    <div class="name">AG2 Studio</div>
+    <div class="desc">AG2 官方可视化工作室，低代码构建和调试多 Agent 对话系统</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 5k+</span>
+      <span class="trend warm">&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/deepseek-ai/DeepSeek-LLM" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">99</span>
+  <div class="info">
+    <div class="name">DeepSeek LLM</div>
+    <div class="desc">DeepSeek 开源大语言模型系列，高性能 MoE 架构，训练高效推理快速</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 90k+</span>
+      <span class="trend hot">&#8593;&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+<a href="https://github.com/kyegomez/swarms" class="project-card" target="_blank" rel="noopener">
+  <span class="rank ">100</span>
+  <div class="info">
+    <div class="name">Swarms</div>
+    <div class="desc">企业级多 Agent 协作框架，大规模 Agent 集群编排与自动化</div>
+    <div class="meta-row">
+      <span class="stars">&#9733; 10k+</span>
+      <span class="trend warm">&#8593;&#8593;</span>
+    </div>
+  </div>
+</a>
+</div>
+<footer>
+  <div class="container">
+    <p>数据来源：GitHub Trending / Trendshift / 公开技术博客与新闻</p>
+    <p>生成时间：<span class="timestamp">2026-05-25 07:05:39</span></p>
+    <p style="margin-top:10px;font-weight:600;">Made with Marvis</p>
+  </div>
+</footer>
+</body>
+</html>
